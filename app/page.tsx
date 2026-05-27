@@ -14,9 +14,9 @@ import CTABanner from "@/components/sections/CTABanner"
 import { localBusinessSchema } from "@/lib/schema"
 
 export const metadata: Metadata = {
-  title: "Mobile Welder London | Exhaust, MOT & Commercial Welding — Weldsmith",
+  title: "Mobile Welder London | Exhaust, MOT & Commercial Welding — Fused Welding Services",
   description:
-    "Mobile welding across London. Exhaust repairs, MOT chassis welding and commercial vehicle repairs from £80. We come to you — 7 days a week. Call Weldsmith.",
+    "Mobile welding across London. Exhaust repairs, MOT chassis welding and commercial vehicle repairs from £80. We come to you — 7 days a week. Call Fused Welding Services.",
 }
 
 export default function HomePage() {
@@ -41,7 +41,7 @@ export default function HomePage() {
             <div className="relative h-[300px] sm:h-[380px] md:h-[460px] rounded-xl overflow-hidden order-2 md:order-1">
               <Image
                 src="/images/exhaust-weld-closeup.jpg"
-                alt="Weldsmith — professional mobile welder at work"
+                alt="Fused Welding Services — professional mobile welder at work"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -60,14 +60,14 @@ export default function HomePage() {
             {/* Text */}
             <div className="order-1 md:order-2">
               <p className="text-[#FF6B00] text-xs font-bold tracking-[0.15em] uppercase mb-3">
-                About Weldsmith
+                About Fused Welding Services
               </p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight mb-6">
                 Built to come<br />to you
               </h2>
               <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
                 <p>
-                  Weldsmith is a London-based mobile welding service built on one simple idea — your
+                  Fused Welding Services is a London-based mobile welding service built on one simple idea — your
                   vehicle shouldn&apos;t need to go to a workshop for a quality weld repair.
                 </p>
                 <p>

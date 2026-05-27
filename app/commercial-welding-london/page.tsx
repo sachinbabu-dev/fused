@@ -9,9 +9,9 @@ import CTABanner from "@/components/sections/CTABanner"
 import { localBusinessSchema } from "@/lib/schema"
 
 export const metadata: Metadata = {
-  title: "Commercial Welding London | HGV & Fleet Welding — Weldsmith",
+  title: "Commercial Welding London | HGV & Fleet Welding — Fused Welding Services",
   description:
-    "Mobile commercial and HGV welding across London. On-site fleet welding at depots, yards and industrial sites. Trailers, plant machinery and vans. Call Weldsmith.",
+    "Mobile commercial and HGV welding across London. On-site fleet welding at depots, yards and industrial sites. Trailers, plant machinery and vans. Call Fused Welding Services.",
 }
 
 export default function CommercialWeldingPage() {
@@ -22,7 +22,7 @@ export default function CommercialWeldingPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             localBusinessSchema({
-              name: "Weldsmith — Commercial & HGV Welding London",
+              name: "Fused Welding Services — Commercial & HGV Welding London",
               description:
                 "Mobile commercial and HGV welding service across London. On-site fleet welding at depots and industrial sites.",
             })
@@ -39,7 +39,7 @@ export default function CommercialWeldingPage() {
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Weldsmith provides professional mobile commercial and HGV welding across London, working
+              Fused Welding Services provides professional mobile commercial and HGV welding across London, working
               directly at your depot, yard or industrial site to minimise vehicle downtime. Whether
               you operate a van fleet, a trailer fleet, or heavy plant machinery, we come to you fully
               equipped — carrying our own generator where mains power isn&apos;t available — and carry out
@@ -57,7 +57,7 @@ export default function CommercialWeldingPage() {
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              Fleets can&apos;t afford long downtime periods, which is why Weldsmith&apos;s mobile approach is
+              Fleets can&apos;t afford long downtime periods, which is why Fused Welding Services&apos;s mobile approach is
               valued by transport operators, fleet managers and depot supervisors across London. We
               attend site, assess the damage, confirm the price, and get to work — often completing
               repairs the same day. For ongoing fleet maintenance contracts or regular depot visits,

@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X, Phone } from "lucide-react"
 
 export default function Navbar() {
@@ -21,8 +22,19 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="text-white font-bold text-xl tracking-tight">
-            Weld<span className="text-[#FF6B00]">smith</span>
+          <Link href="/" className="flex items-center gap-2.5">
+            <div className="shrink-0">
+              <Image
+                src="/images/logo.png"
+                alt="Fused Welding Services logo"
+                width={120}
+                height={52}
+                className="object-contain"
+              />
+            </div>
+            <span className="text-white font-bold text-base sm:text-lg leading-tight tracking-tight">
+              Fused
+            </span>
           </Link>
 
           {/* Desktop nav */}

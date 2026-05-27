@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const borough = boroughs.find((b) => b.slug === slug)
   if (!borough) return {}
   return {
-    title: `Mobile Welder ${borough.name} | Exhaust & MOT Welding — Weldsmith`,
-    description: `Mobile welding in ${borough.name}, ${borough.area}. Exhaust repairs, MOT welding and commercial vehicle welding from £80. Weldsmith comes to you — call 07700 000000.`,
+    title: `Mobile Welder ${borough.name} | Exhaust & MOT Welding — Fused Welding Services`,
+    description: `Mobile welding in ${borough.name}, ${borough.area}. Exhaust repairs, MOT welding and commercial vehicle welding from £80. Fused Welding Services comes to you — call 07700 000000.`,
   }
 }
 
@@ -46,7 +46,7 @@ export default async function BoroughPage({ params }: Props) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             localBusinessSchema({
-              name: `Weldsmith — Mobile Welder ${borough.name}`,
+              name: `Fused Welding Services — Mobile Welder ${borough.name}`,
               description: `Mobile welding service in ${borough.name}, ${borough.area}. Exhaust, MOT and commercial vehicle welding from £80.`,
             })
           ),
@@ -62,7 +62,7 @@ export default async function BoroughPage({ params }: Props) {
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-5">
-              Weldsmith provides professional mobile welding in {borough.name}, {borough.area}.
+              Fused Welding Services provides professional mobile welding in {borough.name}, {borough.area}.
               Whether you need exhaust welding, MOT chassis repairs or commercial vehicle welding in{" "}
               {borough.name}, we come to your location — your driveway, your workplace, your garage
               forecourt — fully equipped and ready to work. No towing, no workshop wait, no hassle.

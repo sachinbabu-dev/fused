@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
     }
 
     await resend.emails.send({
-      from: "Weldsmith <noreply@weldsmith.co.uk>",
+      from: "Fused Welding Services <noreply@weldsmith.co.uk>",
       to: process.env.CONTACT_EMAIL!,
       subject: `New Quote Request from ${name} — ${service}`,
       html: `

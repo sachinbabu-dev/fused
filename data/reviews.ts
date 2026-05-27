@@ -10,7 +10,7 @@ export const reviews: Review[] = [
     name: "Marcus T.",
     location: "Hackney",
     rating: 5,
-    body: "Exhaust was blowing badly on my van. Weldsmith came out the same afternoon, welded it on my driveway and it's been solid ever since. Saved me a fortune compared to the garage quote I'd had.",
+    body: "Exhaust was blowing badly on my van. Fused Welding Services came out the same afternoon, welded it on my driveway and it's been solid ever since. Saved me a fortune compared to the garage quote I'd had.",
   },
   {
     name: "Diane R.",
@@ -22,6 +22,6 @@ export const reviews: Review[] = [
     name: "Steve H.",
     location: "Park Royal",
     rating: 5,
-    body: "We use Weldsmith for our van fleet. They come to our yard, no fuss, get the work done fast. Can't recommend them enough if you need reliable trade welding in London.",
+    body: "We use Fused Welding Services for our van fleet. They come to our yard, no fuss, get the work done fast. Can't recommend them enough if you need reliable trade welding in London.",
   },
 ]

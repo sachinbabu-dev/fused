@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Phone, MessageCircle } from "lucide-react"
 import { boroughs } from "@/data/boroughs"
 
@@ -11,9 +12,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1 — Brand */}
           <div>
-            <p className="text-white font-bold text-xl mb-3">
-              Weld<span className="text-[#FF6B00]">smith</span>
-            </p>
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className="bg-white rounded p-1 shrink-0">
+                <Image
+                  src="/images/logo.png"
+                  alt="Fused Welding Services logo"
+                  width={40}
+                  height={25}
+                  className="object-contain"
+                />
+              </div>
+              <p className="text-white font-bold text-base leading-tight">
+                Fused <span className="text-[#FF6B00]">Welding Services</span>
+              </p>
+            </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-5">
               Mobile welding across London.
               <br />
@@ -132,7 +144,7 @@ export default function Footer() {
 
       <div className="border-t border-[#141414]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-600 gap-2">
-          <p>© 2025 Weldsmith. All rights reserved.</p>
+          <p>© 2025 Fused Welding Services. All rights reserved.</p>
           <p>Mobile Welding London</p>
         </div>
       </div>

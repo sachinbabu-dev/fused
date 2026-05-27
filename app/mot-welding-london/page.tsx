@@ -9,9 +9,9 @@ import CTABanner from "@/components/sections/CTABanner"
 import { localBusinessSchema } from "@/lib/schema"
 
 export const metadata: Metadata = {
-  title: "MOT Welding London | Chassis & Sill Repairs to Pass MOT — Weldsmith",
+  title: "MOT Welding London | Chassis & Sill Repairs to Pass MOT — Fused Welding Services",
   description:
-    "Mobile MOT welding in London. Sill repairs, floorpan welding, chassis rail and subframe repairs to pass your MOT. On-site, from £80. Call Weldsmith.",
+    "Mobile MOT welding in London. Sill repairs, floorpan welding, chassis rail and subframe repairs to pass your MOT. On-site, from £80. Call Fused Welding Services.",
 }
 
 export default function MOTWeldingPage() {
@@ -22,7 +22,7 @@ export default function MOTWeldingPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             localBusinessSchema({
-              name: "Weldsmith — MOT Welding London",
+              name: "Fused Welding Services — MOT Welding London",
               description:
                 "Mobile MOT welding repairs across London. Sills, floorpans, chassis rails and subframe mounts repaired on-site to pass your MOT.",
             })
@@ -39,7 +39,7 @@ export default function MOTWeldingPage() {
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Failed your MOT on a welding advisory or structural failure? Weldsmith provides
+              Failed your MOT on a welding advisory or structural failure? Fused Welding Services provides
               specialist mobile MOT welding repairs across London — coming to your vehicle wherever it
               is to carry out the structural weld repairs needed to get you through your retest.
               Corrosion to sills, floorpans, chassis rails and subframe mounts are among the most
@@ -61,7 +61,7 @@ export default function MOTWeldingPage() {
               subframe mounting points across all vehicle makes and models. Our mobile welding service
               means you don&apos;t need to transport a car that may not be road-legal — we come to your
               driveway, your mechanic&apos;s forecourt, or wherever the vehicle is sitting. With over 10
-              years of MOT repair experience across London, Weldsmith gets vehicles through their
+              years of MOT repair experience across London, Fused Welding Services gets vehicles through their
               retests properly and affordably.
             </p>
 

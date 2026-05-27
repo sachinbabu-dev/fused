@@ -2,7 +2,7 @@ export function localBusinessSchema(overrides: Record<string, unknown> = {}) {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Weldsmith",
+    name: "Fused Welding Services",
     telephone: "07700000000",
     address: {
       "@type": "PostalAddress",

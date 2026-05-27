@@ -7,7 +7,7 @@ import CTABanner from "@/components/sections/CTABanner"
 export const metadata: Metadata = {
   title: "Mobile Welding London — All Areas We Cover",
   description:
-    "Weldsmith covers all 32 London boroughs. Find your area for local mobile welding information — exhaust, MOT and commercial vehicle repairs from £80.",
+    "Fused Welding Services covers all 32 London boroughs. Find your area for local mobile welding information — exhaust, MOT and commercial vehicle repairs from £80.",
 }
 
 const grouped = boroughs.reduce<Record<string, typeof boroughs>>((acc, borough) => {
@@ -26,7 +26,7 @@ export default function AreasPage() {
             London Areas We Cover
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl leading-relaxed">
-            Weldsmith covers all 32 London boroughs. Click your area for local welding information,
+            Fused Welding Services covers all 32 London boroughs. Click your area for local welding information,
             pricing and to request a quote.
           </p>
         </div>

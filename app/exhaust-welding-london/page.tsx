@@ -9,9 +9,9 @@ import CTABanner from "@/components/sections/CTABanner"
 import { localBusinessSchema } from "@/lib/schema"
 
 export const metadata: Metadata = {
-  title: "Exhaust Welding London | Mobile Exhaust Repairs — Weldsmith",
+  title: "Exhaust Welding London | Mobile Exhaust Repairs — Fused Welding Services",
   description:
-    "Mobile exhaust welding across London. On-site exhaust pipe repairs, silencers, manifolds and brackets from £80. MIG and TIG welding — we come to you. Call Weldsmith.",
+    "Mobile exhaust welding across London. On-site exhaust pipe repairs, silencers, manifolds and brackets from £80. MIG and TIG welding — we come to you. Call Fused Welding Services.",
 }
 
 export default function ExhaustWeldingPage() {
@@ -22,7 +22,7 @@ export default function ExhaustWeldingPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             localBusinessSchema({
-              name: "Weldsmith — Exhaust Welding London",
+              name: "Fused Welding Services — Exhaust Welding London",
               description:
                 "Mobile exhaust welding service across London. On-site MIG and TIG welding for cars and vans from £80.",
             })
@@ -39,7 +39,7 @@ export default function ExhaustWeldingPage() {
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Weldsmith provides professional mobile exhaust welding across all London boroughs. Whether
+              Fused Welding Services provides professional mobile exhaust welding across all London boroughs. Whether
               your car or van has a cracked exhaust pipe, a blowing silencer, a snapped bracket or a
               leaking manifold, we come to your location fully equipped to carry out a lasting MIG or
               TIG weld repair on-site. No workshop, no towing, no waiting — just a skilled welder at
@@ -57,7 +57,7 @@ export default function ExhaustWeldingPage() {
 
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
               A blowing exhaust isn&apos;t just noisy — it can be dangerous, cause an MOT failure, and lead
-              to further corrosion if left unrepaired. Weldsmith gives you a fast, affordable fix
+              to further corrosion if left unrepaired. Fused Welding Services gives you a fast, affordable fix
               without the cost and hassle of a main dealer or exhaust specialist. Send us a photo of
               the damage via WhatsApp, include your postcode, and we&apos;ll give you a clear, fixed price
               — usually within the hour.
