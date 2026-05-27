@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-28 md:py-0 md:min-h-screen md:flex md:items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10 md:py-0 md:min-h-screen md:flex md:items-center">
         <div className="max-w-2xl">
           {/* Live badge */}
           <div className="inline-flex items-center gap-2 bg-[#FF6B00]/10 border border-[#FF6B00]/25 rounded-full px-4 py-1.5 mb-7">
