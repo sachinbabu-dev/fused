@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(mv \"aman-jakhar-CrTTr9xF-w4-unsplash.jpg\"         \"sparks-warm.jpg\")",
+      "Bash(mv \"benjamin-wedemeyer-bzzSg8hTKKY-unsplash.jpg\"   \"commercial-vehicle-weld.jpg\")",
+      "Bash(mv \"christopher-burns-Wiu3w-99tNg-unsplash.jpg\"    \"exhaust-weld-closeup.jpg\")",
+      "Bash(mv \"jonathan-chen-0G8M3LVT5Ds-unsplash.jpg\"        \"hero-welder.jpg\")",
+      "Bash(mv \"max-larochelle-c-vWdiICscA-unsplash.jpg\"       \"welder-onsite.jpg\")",
+      "Bash(mkdir -p /Users/sachinbabu.dev/Desktop/weldsmith/public/images && mv /Users/sachinbabu.dev/Desktop/weldsmith/public/*.jpg /Users/sachinbabu.dev/Desktop/weldsmith/public/images/ && ls /Users/sachinbabu.dev/Desktop/weldsmith/public/images/)"
+    ],
+    "additionalDirectories": [
+      "/Users/sachinbabu.dev/Desktop/weldsmith/public"
+    ]
+  }
+}

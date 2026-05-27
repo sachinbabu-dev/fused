@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://weldsmith.co.uk
+
+# Sitemaps
+Sitemap: https://weldsmith.co.uk/sitemap.xml

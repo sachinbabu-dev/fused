@@ -1,0 +1,141 @@
+import Link from "next/link"
+import { Phone, MessageCircle } from "lucide-react"
+import { boroughs } from "@/data/boroughs"
+
+export default function Footer() {
+  const footerBoroughs = boroughs.slice(0, 8)
+
+  return (
+    <footer className="bg-[#080808] border-t border-[#141414]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Column 1 — Brand */}
+          <div>
+            <p className="text-white font-bold text-xl mb-3">
+              Weld<span className="text-[#FF6B00]">smith</span>
+            </p>
+            <p className="text-gray-500 text-sm leading-relaxed mb-5">
+              Mobile welding across London.
+              <br />
+              Exhaust · MOT · Commercial · HGV
+            </p>
+            <a
+              href="tel:07700000000"
+              className="flex items-center gap-2 text-[#FF6B00] font-semibold text-sm mb-3 hover:text-orange-400 transition-colors"
+            >
+              <Phone className="w-3.5 h-3.5" />
+              07700 000000
+            </a>
+            <a
+              href="https://wa.me/4407700000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-400 hover:text-white font-medium text-sm transition-colors"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              WhatsApp Us
+            </a>
+          </div>
+
+          {/* Column 2 — Services */}
+          <div>
+            <p className="text-white font-semibold text-sm mb-4">Services</p>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link
+                  href="/exhaust-welding-london"
+                  className="text-gray-500 hover:text-white transition-colors"
+                >
+                  Exhaust Welding London
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/mot-welding-london"
+                  className="text-gray-500 hover:text-white transition-colors"
+                >
+                  MOT Welding London
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/commercial-welding-london"
+                  className="text-gray-500 hover:text-white transition-colors"
+                >
+                  Commercial Welding London
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/areas"
+                  className="text-gray-500 hover:text-white transition-colors"
+                >
+                  All Areas
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3 — Areas */}
+          <div>
+            <p className="text-white font-semibold text-sm mb-4">Areas We Cover</p>
+            <ul className="space-y-2.5 text-sm">
+              {footerBoroughs.map((b) => (
+                <li key={b.slug}>
+                  <Link
+                    href={`/areas/${b.slug}`}
+                    className="text-gray-500 hover:text-white transition-colors"
+                  >
+                    {b.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4 — Contact */}
+          <div>
+            <p className="text-white font-semibold text-sm mb-4">Contact</p>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <a
+                  href="#quote-form"
+                  className="text-gray-500 hover:text-white transition-colors"
+                >
+                  Get a Free Quote
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:07700000000"
+                  className="flex items-center gap-2 text-gray-500 hover:text-white transition-colors"
+                >
+                  <Phone className="w-3.5 h-3.5" />
+                  Call Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/4407700000000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-500 hover:text-white transition-colors"
+                >
+                  <MessageCircle className="w-3.5 h-3.5" />
+                  WhatsApp Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-[#141414]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-600 gap-2">
+          <p>© 2025 Weldsmith. All rights reserved.</p>
+          <p>Mobile Welding London</p>
+        </div>
+      </div>
+    </footer>
+  )
+}

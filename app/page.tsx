@@ -1,101 +1,124 @@
-import Image from "next/image";
+import type { Metadata } from "next"
+import Image from "next/image"
+import Hero from "@/components/sections/Hero"
+import TrustBar from "@/components/sections/TrustBar"
+import Services from "@/components/sections/Services"
+import Pricing from "@/components/sections/Pricing"
+import HowItWorks from "@/components/sections/HowItWorks"
+import WhyChooseUs from "@/components/sections/WhyChooseUs"
+import Reviews from "@/components/sections/Reviews"
+import Areas from "@/components/sections/Areas"
+import FAQ from "@/components/sections/FAQ"
+import QuoteForm from "@/components/sections/QuoteForm"
+import CTABanner from "@/components/sections/CTABanner"
+import { localBusinessSchema } from "@/lib/schema"
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Mobile Welder London | Exhaust, MOT & Commercial Welding — Weldsmith",
+  description:
+    "Mobile welding across London. Exhaust repairs, MOT chassis welding and commercial vehicle repairs from £80. We come to you — 7 days a week. Call Weldsmith.",
+}
+
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
+      />
+      <Hero />
+      <TrustBar />
+      <Services />
+      <Pricing />
+      <HowItWorks />
+      <WhyChooseUs />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* About Section — image left, text right */}
+      <section id="about" className="py-14 md:py-20 bg-[#0f0f0f]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+            {/* Image */}
+            <div className="relative h-[300px] sm:h-[380px] md:h-[460px] rounded-xl overflow-hidden order-2 md:order-1">
+              <Image
+                src="/images/exhaust-weld-closeup.jpg"
+                alt="Weldsmith — professional mobile welder at work"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              {/* Orange bottom accent */}
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#FF6B00]" />
+              {/* Subtle dark top gradient */}
+              <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-[#0f0f0f]/40 to-transparent" />
+              {/* Floating caption */}
+              <div className="absolute bottom-4 right-4 bg-[#0a0a0a]/85 backdrop-blur-sm border border-[#1e1e1e] rounded-lg px-4 py-2.5">
+                <p className="text-white text-xs font-bold">10+ Years Experience</p>
+                <p className="text-gray-500 text-[11px]">1,000+ jobs across London</p>
+              </div>
+            </div>
+
+            {/* Text */}
+            <div className="order-1 md:order-2">
+              <p className="text-[#FF6B00] text-xs font-bold tracking-[0.15em] uppercase mb-3">
+                About Weldsmith
+              </p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight mb-6">
+                Built to come<br />to you
+              </h2>
+              <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
+                <p>
+                  Weldsmith is a London-based mobile welding service built on one simple idea — your
+                  vehicle shouldn&apos;t need to go to a workshop for a quality weld repair.
+                </p>
+                <p>
+                  We&apos;ve been doing this for over 10 years, working on everything from rusty family
+                  cars failing their MOT to commercial vehicle fleets that can&apos;t afford downtime.
+                </p>
+                <p>
+                  We show up fully equipped, we do the job properly, and we leave the site clean. No
+                  workshops. No waiting lists. No towing fees. Just reliable welding, at your
+                  location, at a fair price.
+                </p>
+              </div>
+
+              {/* Mini stats */}
+              <div className="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-[#1a1a1a]">
+                {[
+                  { v: "10+", l: "Years experience" },
+                  { v: "1,000+", l: "Jobs completed" },
+                  { v: "7", l: "Days a week" },
+                ].map((s) => (
+                  <div key={s.l}>
+                    <p className="text-2xl font-bold text-[#FF6B00]">{s.v}</p>
+                    <p className="text-gray-600 text-xs mt-1">{s.l}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex gap-3 mt-8">
+                <a
+                  href="#services"
+                  className="inline-block bg-[#FF6B00] hover:bg-orange-600 text-white font-semibold text-sm px-5 py-2.5 rounded transition-colors"
+                >
+                  See Our Services
+                </a>
+                <a
+                  href="tel:07700000000"
+                  className="inline-block border border-[#2a2a2a] hover:border-[#FF6B00]/40 text-gray-400 hover:text-white font-semibold text-sm px-5 py-2.5 rounded transition-colors"
+                >
+                  Call 07700 000000
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </section>
+
+      <Reviews />
+      <Areas />
+      <FAQ />
+      <QuoteForm />
+      <CTABanner />
+    </>
+  )
 }
