@@ -29,7 +29,7 @@ export default function Navbar() {
                 alt="Fused Welding Services logo"
                 width={120}
                 height={52}
-                className="object-contain"
+                className="object-contain w-[90px] sm:w-[110px] md:w-[120px] h-auto"
               />
             </div>
             <span className="text-white font-bold text-base sm:text-lg leading-tight tracking-tight">
