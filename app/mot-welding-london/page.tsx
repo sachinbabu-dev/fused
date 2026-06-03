@@ -9,9 +9,9 @@ import CTABanner from "@/components/sections/CTABanner"
 import { localBusinessSchema } from "@/lib/schema"
 
 export const metadata: Metadata = {
-  title: "MOT Welding London | Chassis & Sill Repairs to Pass MOT — Fused Welding Services",
+  title: "MOT Welding London | Chassis & Sill Repairs to Pass MOT — Ironforge",
   description:
-    "Mobile MOT welding in London. Sill repairs, floorpan welding, chassis rail and subframe repairs to pass your MOT. On-site, from £80. Call Fused Welding Services.",
+    "Mobile MOT welding in London. Sill repairs, floorpan welding, chassis rail and subframe repairs to pass your MOT. On-site, from £80. Call Ironforge.",
 }
 
 export default function MOTWeldingPage() {
@@ -22,7 +22,7 @@ export default function MOTWeldingPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             localBusinessSchema({
-              name: "Fused Welding Services — MOT Welding London",
+              name: "Ironforge — MOT Welding London",
               description:
                 "Mobile MOT welding repairs across London. Sills, floorpans, chassis rails and subframe mounts repaired on-site to pass your MOT.",
             })
@@ -39,7 +39,7 @@ export default function MOTWeldingPage() {
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Failed your MOT on a welding advisory or structural failure? Fused Welding Services provides
+              Failed your MOT on a welding advisory or structural failure? Ironforge provides
               specialist mobile MOT welding repairs across London — coming to your vehicle wherever it
               is to carry out the structural weld repairs needed to get you through your retest.
               Corrosion to sills, floorpans, chassis rails and subframe mounts are among the most
@@ -61,16 +61,16 @@ export default function MOTWeldingPage() {
               subframe mounting points across all vehicle makes and models. Our mobile welding service
               means you don&apos;t need to transport a car that may not be road-legal — we come to your
               driveway, your mechanic&apos;s forecourt, or wherever the vehicle is sitting. With over 10
-              years of MOT repair experience across London, Fused Welding Services gets vehicles through their
+              years of MOT repair experience across London, Ironforge gets vehicles through their
               retests properly and affordably.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:07700000000"
+                href="tel:+447570167631"
                 className="inline-flex items-center justify-center gap-2 bg-[#FF6B00] hover:bg-orange-600 text-white font-bold text-lg px-6 py-3 rounded transition-colors"
               >
-                Call Now — 07700 000000
+                Call Now — +44-7570 167631
               </a>
               <a
                 href="#quote-form"

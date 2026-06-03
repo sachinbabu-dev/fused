@@ -15,7 +15,7 @@ export default function Areas() {
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">
             London Boroughs We Cover
           </h2>
-          <p className="text-gray-500 text-base max-w-xl mx-auto leading-relaxed">
+          <p className="text-gray-200 text-base max-w-xl mx-auto leading-relaxed">
             We cover all of Greater London. Click your area for local information.
           </p>
         </div>
@@ -25,7 +25,7 @@ export default function Areas() {
             <Link
               key={borough.slug}
               href={`/areas/${borough.slug}`}
-              className="bg-[#111111] border border-[#1a1a1a] rounded-lg px-4 py-3 text-sm font-medium text-gray-400 hover:border-[#FF6B00]/40 hover:text-white hover:bg-[#141414] transition-all text-center"
+              className="bg-[#111111] border border-[#1a1a1a] rounded-lg px-4 py-3 text-sm font-medium text-gray-200 hover:border-[#FF6B00]/40 hover:text-white hover:bg-[#141414] transition-all text-center"
             >
               {borough.name}
             </Link>
@@ -41,7 +41,7 @@ export default function Areas() {
           </Link>
         </div>
 
-        <p className="text-center text-xs text-gray-600">
+        <p className="text-center text-xs text-gray-400">
           Don&apos;t see your area? We cover all of London — send your postcode and we&apos;ll confirm.
         </p>
       </div>

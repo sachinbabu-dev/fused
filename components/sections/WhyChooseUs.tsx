@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
             Why Us
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-            Why London Chooses Fused Welding Services
+            Why London Chooses Ironforge
           </h2>
         </div>
 
@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
                   <Icon className="w-4.5 h-4.5 text-[#FF6B00]" strokeWidth={1.75} />
                 </div>
                 <h3 className="text-white font-semibold text-sm mb-2">{reason.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{reason.description}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{reason.description}</p>
               </div>
             )
           })}

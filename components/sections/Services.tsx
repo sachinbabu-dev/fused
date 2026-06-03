@@ -44,7 +44,7 @@ export default function Services() {
               at your location
             </h2>
           </div>
-          <p className="text-gray-500 max-w-xs text-sm leading-relaxed md:text-right">
+          <p className="text-gray-200 max-w-xs text-sm leading-relaxed md:text-right">
             Mobile welding for cars, vans, commercial vehicles and HGVs across all of London.
           </p>
         </div>
@@ -80,7 +80,7 @@ export default function Services() {
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="w-7 h-0.5 bg-[#FF6B00] mb-3" />
                 <h3 className="text-lg font-bold text-white mb-2 leading-snug">{service.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4 max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-500">
+                <p className="text-gray-200 text-sm leading-relaxed mb-4 max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-500">
                   {service.description}
                 </p>
                 <div className="flex items-center gap-1.5 text-[#FF6B00] font-semibold text-sm">

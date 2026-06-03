@@ -17,7 +17,7 @@ export const faqs: FAQ[] = [
   {
     question: "Can you do same-day welding in London?",
     answer:
-      "We often can, depending on where we're working that day. Call us on 07700 000000 with your postcode and we'll tell you honestly what's available.",
+      "We often can, depending on where we're working that day. Call us on +44-7570 167631 with your postcode and we'll tell you honestly what's available.",
   },
   {
     question: "What types of vehicles do you weld?",
@@ -47,7 +47,7 @@ export const faqs: FAQ[] = [
   {
     question: "Can you quote from a photo?",
     answer:
-      "Usually, yes. A clear photo of the damage, the vehicle type and your postcode is enough for us to give a reliable price. WhatsApp works great for this — 07700 000000.",
+      "Usually, yes. A clear photo of the damage, the vehicle type and your postcode is enough for us to give a reliable price. WhatsApp works great for this — +44-7570 167631.",
   },
   {
     question: "How long will the job take?",
@@ -77,6 +77,6 @@ export const faqs: FAQ[] = [
   {
     question: "How do I book?",
     answer:
-      "Call or WhatsApp 07700 000000, or fill in the quote form on this page. Include a photo, your postcode and a brief description of the problem — and we'll get back to you fast.",
+      "Call or WhatsApp +44-7570 167631, or fill in the quote form on this page. Include a photo, your postcode and a brief description of the problem — and we'll get back to you fast.",
   },
 ]

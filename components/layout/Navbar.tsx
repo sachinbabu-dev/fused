@@ -25,16 +25,13 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2.5">
             <div className="shrink-0">
               <Image
-                src="/images/logo.png"
-                alt="Fused Welding Services logo"
+                src="/images/logo-large.png"
+                alt="Ironforge logo"
                 width={120}
-                height={52}
-                className="object-contain w-[90px] sm:w-[110px] md:w-[120px] h-auto"
+                height={60}
+                className="object-contain w-[90px] sm:w-[110px] md:w-[140px] h-auto"
               />
             </div>
-            <span className="text-white font-bold text-base sm:text-lg leading-tight tracking-tight">
-              Fused
-            </span>
           </Link>
 
           {/* Desktop nav */}
@@ -43,7 +40,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-gray-500 hover:text-white text-sm font-medium transition-colors"
+                className="text-gray-200 hover:text-white text-sm font-medium transition-colors"
               >
                 {link.label}
               </Link>
@@ -53,11 +50,11 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:07700000000"
+              href="tel:+447570167631"
               className="flex items-center gap-1.5 text-[#FF6B00] font-semibold text-sm hover:text-orange-400 transition-colors"
             >
               <Phone className="w-3.5 h-3.5" />
-              07700 000000
+              +44-7570 167631
             </a>
             <a
               href="#quote-form"
@@ -95,11 +92,11 @@ export default function Navbar() {
           </nav>
           <div className="flex flex-col gap-3 mt-4 pt-4 border-t border-[#1a1a1a]">
             <a
-              href="tel:07700000000"
+              href="tel:+447570167631"
               className="flex items-center gap-2 text-[#FF6B00] font-semibold text-sm"
             >
               <Phone className="w-4 h-4" />
-              07700 000000
+              +44-7570 167631
             </a>
             <a
               href="#quote-form"

@@ -29,7 +29,7 @@ export default function Reviews() {
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-2">
             What Our Customers Say
           </h2>
-          <p className="text-gray-500 text-sm">Real jobs, real customers, across London.</p>
+          <p className="text-gray-300 text-sm">Real jobs, real customers, across London.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -50,7 +50,7 @@ export default function Reviews() {
                 </div>
                 <div>
                   <p className="text-white font-semibold text-sm">{review.name}</p>
-                  <p className="text-gray-600 text-xs">{review.location}</p>
+                  <p className="text-gray-300 text-xs">{review.location}</p>
                 </div>
               </div>
             </div>

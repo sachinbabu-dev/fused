@@ -9,9 +9,9 @@ import CTABanner from "@/components/sections/CTABanner"
 import { localBusinessSchema } from "@/lib/schema"
 
 export const metadata: Metadata = {
-  title: "Exhaust Welding London | Mobile Exhaust Repairs — Fused Welding Services",
+  title: "Exhaust Welding London | Mobile Exhaust Repairs — Ironforge",
   description:
-    "Mobile exhaust welding across London. On-site exhaust pipe repairs, silencers, manifolds and brackets from £80. MIG and TIG welding — we come to you. Call Fused Welding Services.",
+    "Mobile exhaust welding across London. On-site exhaust pipe repairs, silencers, manifolds and brackets from £80. MIG and TIG welding — we come to you. Call Ironforge.",
 }
 
 export default function ExhaustWeldingPage() {
@@ -22,7 +22,7 @@ export default function ExhaustWeldingPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             localBusinessSchema({
-              name: "Fused Welding Services — Exhaust Welding London",
+              name: "Ironforge — Exhaust Welding London",
               description:
                 "Mobile exhaust welding service across London. On-site MIG and TIG welding for cars and vans from £80.",
             })
@@ -39,7 +39,7 @@ export default function ExhaustWeldingPage() {
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Fused Welding Services provides professional mobile exhaust welding across all London boroughs. Whether
+              Ironforge provides professional mobile exhaust welding across all London boroughs. Whether
               your car or van has a cracked exhaust pipe, a blowing silencer, a snapped bracket or a
               leaking manifold, we come to your location fully equipped to carry out a lasting MIG or
               TIG weld repair on-site. No workshop, no towing, no waiting — just a skilled welder at
@@ -57,7 +57,7 @@ export default function ExhaustWeldingPage() {
 
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
               A blowing exhaust isn&apos;t just noisy — it can be dangerous, cause an MOT failure, and lead
-              to further corrosion if left unrepaired. Fused Welding Services gives you a fast, affordable fix
+              to further corrosion if left unrepaired. Ironforge gives you a fast, affordable fix
               without the cost and hassle of a main dealer or exhaust specialist. Send us a photo of
               the damage via WhatsApp, include your postcode, and we&apos;ll give you a clear, fixed price
               — usually within the hour.
@@ -65,10 +65,10 @@ export default function ExhaustWeldingPage() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:07700000000"
+                href="tel:+447570167631"
                 className="inline-flex items-center justify-center gap-2 bg-[#FF6B00] hover:bg-orange-600 text-white font-bold text-lg px-6 py-3 rounded transition-colors"
               >
-                Call Now — 07700 000000
+                Call Now — +44-7570 167631
               </a>
               <a
                 href="#quote-form"

@@ -8,7 +8,9 @@
       "Bash(mv \"christopher-burns-Wiu3w-99tNg-unsplash.jpg\"    \"exhaust-weld-closeup.jpg\")",
       "Bash(mv \"jonathan-chen-0G8M3LVT5Ds-unsplash.jpg\"        \"hero-welder.jpg\")",
       "Bash(mv \"max-larochelle-c-vWdiICscA-unsplash.jpg\"       \"welder-onsite.jpg\")",
-      "Bash(mkdir -p /Users/sachinbabu.dev/Desktop/weldsmith/public/images && mv /Users/sachinbabu.dev/Desktop/weldsmith/public/*.jpg /Users/sachinbabu.dev/Desktop/weldsmith/public/images/ && ls /Users/sachinbabu.dev/Desktop/weldsmith/public/images/)"
+      "Bash(mkdir -p /Users/sachinbabu.dev/Desktop/weldsmith/public/images && mv /Users/sachinbabu.dev/Desktop/weldsmith/public/*.jpg /Users/sachinbabu.dev/Desktop/weldsmith/public/images/ && ls /Users/sachinbabu.dev/Desktop/weldsmith/public/images/)",
+      "Bash(xargs sed -i '' -e 's|tel:07700000000|tel:+447570167631|g' -e 's|07700 000000|+44-7570 167631|g' -e 's|07700000000|07570167631|g' -e 's|wa\\\\.me/4407700000000|wa.me/447570167631|g')",
+      "Bash(xargs sed -i '' -e 's|Iron Forge Welding Services|Ironforge|g' -e 's|Iron ForgeWelding|Ironforge|g')"
     ],
     "additionalDirectories": [
       "/Users/sachinbabu.dev/Desktop/weldsmith/public"

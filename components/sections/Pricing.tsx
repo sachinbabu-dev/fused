@@ -12,7 +12,7 @@ export default function Pricing() {
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">
             Straightforward Pricing
           </h2>
-          <p className="text-gray-500 text-base max-w-xl mx-auto leading-relaxed">
+          <p className="text-gray-200 text-base max-w-xl mx-auto leading-relaxed">
             No hidden call-out fees. No vague quotes. Send us a photo and we&apos;ll give you a clear
             price before we travel.
           </p>
@@ -38,7 +38,7 @@ export default function Pricing() {
 
               <div className="mb-6">
                 <h3 className="text-white font-bold text-lg mb-1">{tier.name}</h3>
-                <p className="text-gray-600 text-sm">{tier.subtext}</p>
+                <p className="text-gray-300 text-sm">{tier.subtext}</p>
                 <p className="text-3xl font-bold text-[#FF6B00] mt-4">{tier.price}</p>
               </div>
 
@@ -46,7 +46,7 @@ export default function Pricing() {
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-2.5">
                     <Check className="w-3.5 h-3.5 mt-0.5 shrink-0 text-[#FF6B00]" />
-                    <span className="text-gray-400 text-sm leading-relaxed">{feature}</span>
+                    <span className="text-gray-200 text-sm leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -56,7 +56,7 @@ export default function Pricing() {
                 className={`block text-center font-semibold text-sm py-3 px-5 rounded transition-colors ${
                   tier.popular
                     ? "bg-[#FF6B00] hover:bg-orange-600 text-white"
-                    : "border border-[#2a2a2a] hover:border-[#FF6B00]/50 text-gray-400 hover:text-white"
+                    : "border border-[#2a2a2a] hover:border-[#FF6B00]/50 text-gray-200 hover:text-white"
                 }`}
               >
                 Get a Quote
@@ -65,10 +65,10 @@ export default function Pricing() {
           ))}
         </div>
 
-        <p className="text-center text-xs text-gray-600 mt-8">
+        <p className="text-center text-xs text-gray-200 mt-8">
           Not sure which applies to you?{" "}
-          <a href="tel:07700000000" className="text-[#FF6B00] hover:underline font-medium">
-            Send a photo and your postcode to 07700 000000
+          <a href="tel:+447570167631" className="text-[#FF6B00] hover:underline font-medium">
+            Send a photo and your postcode to +44-7570 167631
           </a>{" "}
           and we&apos;ll tell you exactly what&apos;s needed.
         </p>

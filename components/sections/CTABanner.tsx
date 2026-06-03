@@ -14,7 +14,7 @@ export default function CTABanner() {
         aria-hidden="true"
       />
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#0a0a0a]/88" />
+      <div className="absolute inset-0 bg-[#0a0a0a]/50" />
       {/* Top + bottom orange accent lines */}
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#FF6B00]" />
       <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#FF6B00]" />
@@ -26,19 +26,19 @@ export default function CTABanner() {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight mb-4">
           Ready to get your vehicle fixed?
         </h2>
-        <p className="text-gray-400 text-base sm:text-lg mb-8 sm:mb-10 leading-relaxed">
+        <p className="text-gray-100 text-base sm:text-lg mb-8 sm:mb-10 leading-relaxed">
           Call or WhatsApp us with a photo and your postcode — we&apos;ll quote you fast.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
           <a
-            href="tel:07700000000"
+            href="tel:+447570167631"
             className="inline-flex items-center justify-center gap-2 bg-[#FF6B00] hover:bg-orange-600 text-white font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 rounded transition-colors"
           >
             <Phone className="w-5 h-5 shrink-0" />
-            Call Now — 07700 000000
+            Call Now — +44-7570 167631
           </a>
           <a
-            href="https://wa.me/4407700000000"
+            href="https://wa.me/4407570167631"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 border border-white/15 hover:border-white/35 bg-white/5 hover:bg-white/10 text-white font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 rounded backdrop-blur-sm transition-colors"

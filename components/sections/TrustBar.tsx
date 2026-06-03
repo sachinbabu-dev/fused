@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 const stats = [
-  { value: "10+", label: "Years Experience" },
+  { value: "20+", label: "Years Experience" },
   { value: "1,000+", label: "Jobs Completed" },
   { value: "25+", label: "London Boroughs Covered" },
   { value: "7", label: "Days Available" },
@@ -30,7 +30,7 @@ export default function TrustBar() {
           {stats.map((stat) => (
             <div key={stat.label}>
               <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FF6B00] leading-none">{stat.value}</p>
-              <p className="text-gray-400 text-sm font-medium mt-2 tracking-wide">{stat.label}</p>
+              <p className="text-gray-100 text-sm font-medium mt-2 tracking-wide">{stat.label}</p>
             </div>
           ))}
         </div>

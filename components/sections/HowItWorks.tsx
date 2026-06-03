@@ -43,7 +43,7 @@ export default function HowItWorks() {
               <br />
               No faff.
             </h2>
-            <p className="text-gray-500 text-sm mb-12">No waiting rooms, no vague estimates.</p>
+            <p className="text-gray-200 text-sm mb-12">No waiting rooms, no vague estimates.</p>
 
             <div className="space-y-8">
               {steps.map((step) => (
@@ -55,7 +55,7 @@ export default function HowItWorks() {
                   </div>
                   <div className="pt-1.5">
                     <h3 className="text-white font-semibold text-sm mb-1">{step.title}</h3>
-                    <p className="text-gray-500 text-sm leading-relaxed">{step.description}</p>
+                    <p className="text-gray-300 text-sm leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}
@@ -63,17 +63,17 @@ export default function HowItWorks() {
 
             <div className="flex flex-col sm:flex-row gap-3 mt-12 pt-8 border-t border-[#1a1a1a]">
               <a
-                href="tel:07700000000"
+                href="tel:+447570167631"
                 className="inline-flex items-center gap-2 bg-[#FF6B00] hover:bg-orange-600 text-white font-bold text-sm px-5 py-3 rounded transition-colors"
               >
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
               <a
-                href="https://wa.me/4407700000000"
+                href="https://wa.me/4407570167631"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-[#2a2a2a] hover:border-[#FF6B00]/40 text-gray-400 hover:text-white font-bold text-sm px-5 py-3 rounded transition-colors"
+                className="inline-flex items-center gap-2 border border-[#2a2a2a] hover:border-[#FF6B00]/40 text-gray-200 hover:text-white font-bold text-sm px-5 py-3 rounded transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp Us

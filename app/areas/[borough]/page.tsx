@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const borough = boroughs.find((b) => b.slug === slug)
   if (!borough) return {}
   return {
-    title: `Mobile Welder ${borough.name} | Exhaust & MOT Welding — Fused Welding Services`,
-    description: `Mobile welding in ${borough.name}, ${borough.area}. Exhaust repairs, MOT welding and commercial vehicle welding from £80. Fused Welding Services comes to you — call 07700 000000.`,
+    title: `Mobile Welder ${borough.name} | Exhaust & MOT Welding — Ironforge`,
+    description: `Mobile welding in ${borough.name}, ${borough.area}. Exhaust repairs, MOT welding and commercial vehicle welding from £80. Ironforge comes to you — call +44-7570 167631.`,
   }
 }
 
@@ -46,7 +46,7 @@ export default async function BoroughPage({ params }: Props) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             localBusinessSchema({
-              name: `Fused Welding Services — Mobile Welder ${borough.name}`,
+              name: `Ironforge — Mobile Welder ${borough.name}`,
               description: `Mobile welding service in ${borough.name}, ${borough.area}. Exhaust, MOT and commercial vehicle welding from £80.`,
             })
           ),
@@ -62,7 +62,7 @@ export default async function BoroughPage({ params }: Props) {
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-5">
-              Fused Welding Services provides professional mobile welding in {borough.name}, {borough.area}.
+              Ironforge provides professional mobile welding in {borough.name}, {borough.area}.
               Whether you need exhaust welding, MOT chassis repairs or commercial vehicle welding in{" "}
               {borough.name}, we come to your location — your driveway, your workplace, your garage
               forecourt — fully equipped and ready to work. No towing, no workshop wait, no hassle.
@@ -87,11 +87,11 @@ export default async function BoroughPage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <a
-                href="tel:07700000000"
+                href="tel:+447570167631"
                 className="inline-flex items-center gap-2 bg-[#FF6B00] hover:bg-orange-600 text-white font-bold text-lg px-6 py-3 rounded transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call Now — 07700 000000
+                Call Now — +44-7570 167631
               </a>
               <a
                 href="#quote-form"

@@ -63,7 +63,7 @@ export default function QuoteForm() {
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
             Get a Free Quote Today
           </h2>
-          <p className="text-gray-500 text-base leading-relaxed">
+          <p className="text-gray-300 text-base leading-relaxed">
             Tell us what&apos;s wrong, where you are, and send a photo. We&apos;ll come back with a clear
             price — usually within the hour.
           </p>
@@ -77,7 +77,7 @@ export default function QuoteForm() {
               </svg>
             </div>
             <p className="text-green-300 font-semibold text-lg">Quote request sent!</p>
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-gray-300 text-sm mt-2">
               We&apos;ll review your details and be in touch shortly — usually within the hour during working hours.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function QuoteForm() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                <label className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">
                   Full Name <span className="text-[#FF6B00]">*</span>
                 </label>
                 <input
@@ -99,7 +99,7 @@ export default function QuoteForm() {
                 />
               </div>
               <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                <label className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">
                   Phone Number <span className="text-[#FF6B00]">*</span>
                 </label>
                 <input
@@ -108,7 +108,7 @@ export default function QuoteForm() {
                   value={form.phone}
                   onChange={handleChange}
                   required
-                  placeholder="07700 000000"
+                  placeholder="+44-7570 167631"
                   className={inputClass}
                 />
               </div>
@@ -116,7 +116,7 @@ export default function QuoteForm() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                <label className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">
                   Postcode <span className="text-[#FF6B00]">*</span>
                 </label>
                 <input
@@ -130,7 +130,7 @@ export default function QuoteForm() {
                 />
               </div>
               <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                <label className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">
                   Vehicle Type <span className="text-[#FF6B00]">*</span>
                 </label>
                 <input
@@ -146,7 +146,7 @@ export default function QuoteForm() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+              <label className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">
                 Service Needed <span className="text-[#FF6B00]">*</span>
               </label>
               <select
@@ -167,7 +167,7 @@ export default function QuoteForm() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+              <label className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">
                 Describe the Problem <span className="text-[#FF6B00]">*</span>
               </label>
               <textarea
@@ -184,8 +184,8 @@ export default function QuoteForm() {
             {status === "error" && (
               <p className="text-red-400 text-sm text-center">
                 Something went wrong. Please call us directly on{" "}
-                <a href="tel:07700000000" className="underline">
-                  07700 000000
+                <a href="tel:+447570167631" className="underline">
+                  +44-7570 167631
                 </a>
                 .
               </p>
@@ -201,10 +201,10 @@ export default function QuoteForm() {
           </form>
         )}
 
-        <p className="text-center text-xs text-gray-600 mt-6">
+        <p className="text-center text-xs text-gray-300 mt-6">
           Prefer to talk?{" "}
-          <a href="tel:07700000000" className="text-[#FF6B00] hover:underline">
-            Call us on 07700 000000
+          <a href="tel:+447570167631" className="text-[#FF6B00] hover:underline">
+            Call us on +44-7570 167631
           </a>{" "}
           · WhatsApp works great for photos — same number
         </p>

@@ -48,7 +48,7 @@ export default function Hero() {
             {[
               "Exhaust welding, MOT chassis repairs & commercial vehicles",
               "Fully equipped van — ready at your home, workplace or roadside",
-              "10+ years experience · Public liability insured",
+              "20+ years experience · Public liability insured",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="text-[#FF6B00] font-bold text-base leading-tight mt-0.5 shrink-0">✔</span>
@@ -60,14 +60,14 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 items-start">
             <a
-              href="tel:07700000000"
+              href="tel:+447570167631"
               className="inline-flex items-center gap-2 bg-[#FF6B00] hover:bg-orange-600 text-white font-bold text-sm sm:text-base px-5 sm:px-6 py-3 sm:py-3.5 rounded transition-colors"
             >
               <Phone className="w-4 h-4 shrink-0" />
-              Call Now — 07700 000000
+              Call Now — +44-7570 167631
             </a>
             <a
-              href="https://wa.me/4407700000000"
+              href="https://wa.me/4407570167631"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white/8 hover:bg-white/15 border border-white/15 text-white font-bold text-sm sm:text-base px-5 sm:px-6 py-3 sm:py-3.5 rounded backdrop-blur-sm transition-colors"
@@ -77,13 +77,13 @@ export default function Hero() {
             </a>
             <a
               href="#quote-form"
-              className="inline-flex items-center text-gray-400 hover:text-white font-semibold text-sm underline underline-offset-4 py-3.5 transition-colors"
+              className="inline-flex items-center text-gray-200 hover:text-white font-semibold text-sm underline underline-offset-4 py-3.5 transition-colors"
             >
               Get a Free Quote
             </a>
           </div>
 
-          <p className="mt-5 text-gray-600 text-xs tracking-wide">
+          <p className="mt-5 text-gray-200 text-xs tracking-wide">
             Send us a photo and postcode — we&apos;ll quote you fast.
           </p>
         </div>

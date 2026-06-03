@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://weldsmith.co.uk"),
+  metadataBase: new URL("https://ironforge.co.uk"),
   title: {
-    default: "Mobile Welder London | Exhaust, MOT & Commercial Welding — Fused Welding Services",
-    template: "%s | Fused Welding Services",
+    default: "Mobile Welder London | Exhaust, MOT & Commercial Welding — Ironforge",
+    template: "%s | Ironforge",
   },
   description:
-    "Mobile welding across London. Exhaust repairs, MOT chassis welding and commercial vehicle repairs from £80. We come to you — 7 days a week. Call Fused Welding Services.",
+    "Mobile welding across London. Exhaust repairs, MOT chassis welding and commercial vehicle repairs from £80. We come to you — 7 days a week. Call Ironforge.",
   keywords: [
     "mobile welder London",
     "exhaust welding London",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    siteName: "Fused Welding Services",
+    siteName: "Ironforge",
   },
   robots: {
     index: true,
