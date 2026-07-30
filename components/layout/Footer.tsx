@@ -26,7 +26,7 @@ export default function Footer() {
             <p className="text-gray-200 text-sm leading-relaxed mb-5">
               Mobile welding across London.
               <br />
-              Exhaust · MOT · Commercial · HGV
+              Exhaust · MOT · Commercial · HGV · Architectural
             </p>
             <a
               href="tel:+447570167631"
@@ -72,6 +72,14 @@ export default function Footer() {
                   className="text-gray-200 hover:text-white transition-colors"
                 >
                   Commercial Welding London
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/architectural-welding-london"
+                  className="text-gray-200 hover:text-white transition-colors"
+                >
+                  Architectural Welding London
                 </Link>
               </li>
               <li>

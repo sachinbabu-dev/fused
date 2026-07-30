@@ -27,6 +27,14 @@ const serviceCards = [
     image: "/images/commercial-vehicle-weld.jpg",
     tag: "Fleet Welcome",
   },
+  {
+    title: "Architectural Welding Works",
+    description:
+      "Staircases, balustrades, railings, gates, canopies and structural steel. Bespoke architectural metalwork welded and fitted on-site.",
+    href: "/architectural-welding-london",
+    image: "/images/architectural-welding.jpg",
+    tag: "Bespoke",
+  },
 ]
 
 export default function Services() {
@@ -50,7 +58,7 @@ export default function Services() {
         </div>
 
         {/* Image cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {serviceCards.map((service) => (
             <Link
               key={service.title}
@@ -63,7 +71,7 @@ export default function Services() {
                 alt={service.title}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
               />
 
               {/* Dark gradient overlay — deepens on hover */}

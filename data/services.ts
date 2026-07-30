@@ -23,4 +23,10 @@ export const services: Service[] = [
       "Heavy-duty welding for vans, trucks, trailers and plant machinery. We work on-site at depots, yards and industrial sites to minimise your vehicle downtime.",
     href: "/commercial-welding-london",
   },
+  {
+    title: "Architectural Welding Works",
+    description:
+      "Bespoke architectural metalwork — staircases, balustrades, railings, gates, canopies and structural steelwork. On-site welding and fabrication for homes, offices and commercial builds.",
+    href: "/architectural-welding-london",
+  },
 ]
