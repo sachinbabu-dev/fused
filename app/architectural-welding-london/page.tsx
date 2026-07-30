@@ -32,9 +32,9 @@ const gallery = [
     caption: "Gates & wrought iron",
   },
   {
-    src: "/images/architectural-canopy.jpg",
-    alt: "Structural steel canopy and framework welded on-site",
-    caption: "Canopies & frameworks",
+    src: "/images/architectural-balcony.jpg",
+    alt: "Bespoke Juliet balcony with steel railing welded and installed on-site",
+    caption: "Balconies & Juliet balconies",
   },
 ]
 
